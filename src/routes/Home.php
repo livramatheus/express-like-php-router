@@ -8,8 +8,8 @@ class Home extends RoutesManager {
     public function initRoutes() {
         $this->Route = $this->getRouter()->add('/', 'Home Page');
 
-        $this->Route->get('', FILTER_SANITIZE_NUMBER_INT, function($Rte, $Res, $param) {
-            $Res->body($Rte->getPage())->params('inserted', $param);
+        $this->Route->get('data', FILTER_SANITIZE_NUMBER_INT, function($Rte, $Res, $param) {
+            $Res->body($Rte->getPage())->params('returningparam', $param);
             $Res->status(200)->send();
         }, $this->Route);
 
