@@ -1,0 +1,16 @@
+{
+    "name": "php/expresslikeautoloader",
+    "description": "An express-like PHP router",
+    "authors": [
+        {
+            "name": "Matheus do Livramento",
+            "email": "hire.livramento@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Src\\": "src/"
+        }
+    },
+    "require": {}
+}
