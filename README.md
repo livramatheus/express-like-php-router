@@ -26,8 +26,8 @@
 
 <p>This was an attempt to mimic Express router in PHP. The outcome went pretty well, resembling a lot the "Original" Express.</p>
 <p>The final product offers a router that accepts GET and POST requests.</p>
-<p>This project is actually kinda small, and wasn't tested a lot, so there is still a lot more room to improve.</p>
-<p>I'm aware that there is classes for managing requests and responses, but I wanted to build everything from scratch.</p>
+<p>This project is actually kind of small, and wasn't tested a lot, so there is still a lot more room to improve.</p>
+<p>I'm aware that there are classes for managing requests and responses, but I wanted to build everything from scratch.</p>
 
 <h2 id="features">🔎 Features</h2>
 
@@ -35,7 +35,7 @@
 
 <h2 id="back-end">Back-end</h2>
 
-<p>The router is based on two main classes: Router and Response. Router receives and manages routes, Response is used to sent data back to the client.</p>
+<p>The router is based on two main classes: Router and Response. Router receives and manages routes, Response is used to send data back to the client.</p>
 
 <p>The following example declares a route for "/". Showing various ways of setting up a parameter.</p>
 
@@ -89,7 +89,7 @@ $HomeRoutes->initRoutes();
 ```
 <br/>
 
-<p>The "get" method adds a GET route with the key of "data", validating it to integer. If this route matches, the callback function is called, using three main parameters. $Rte being the route, $Res being a response object to send data back to the client and $param, that stores the parameter matched by name.</p>
+<p>The "get" method adds a GET route with the key of "data", validating it as an integer. If this route matches, the callback function is called, using three main parameters. $Rte being the route, $Res being a response object to send data back to the client and $param, that stores the parameter matched by name.</p>
 
 ```php
 $this->Route->get('data', FILTER_SANITIZE_NUMBER_INT, function($Rte, $Res, $param) {
